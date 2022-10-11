@@ -112,7 +112,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-link);
-    transition: color 250ms;
+    transition-property: color;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 
 }
@@ -147,7 +148,8 @@ body {
     color: var(--contacts-link);
     display: flex;
     align-items: center;
-    transition: color 250ms;
+    transition-property: color;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -232,12 +234,6 @@ body {
     overflow: hidden;
 }
 
-/* .icon-item {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-} */
-
 .icon-item {
     width: 270px;
     height: 120px;
@@ -248,7 +244,6 @@ body {
     align-items: center;
     margin-bottom: 30px;
 }
-
 
 .advanteges-list {
     display: flex;
@@ -296,14 +291,12 @@ body {
 
 .work-item {
     position: relative;
-    
     width: calc((100% - 60px) / 3);
 }
 
 .work-name {
     position: absolute;
     bottom: 0px;
-    
     font-style: normal;
     font-weight: 700;
     font-size: var(--second-font-size);
@@ -461,7 +454,8 @@ body {
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms;
+    transition-property: color;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -497,7 +491,8 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--main-color);
-    transition: background-color 250ms;
+    transition-property: background-color;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -510,6 +505,7 @@ body {
     background-color: var(--accent-color);
     
 }
+
     /* ----------Portfolio--------- */
 
 .header-portfolio {
@@ -579,12 +575,13 @@ body {
 
 .galery-item {
     width: calc((100% - 60px) / 3);
-    transition: box-shadow 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galery-link {
     display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galery-link:hover {
@@ -610,7 +607,8 @@ body {
     bottom: 0;
     right: 0;
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition-property: transform;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
 }
